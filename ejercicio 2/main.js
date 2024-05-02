@@ -33,6 +33,9 @@ class Estudiante extends Persona{
         super(nombre, apellido, edad);
         this.carrera=carrera;
     }
+    Saludar(){
+        console.log(`hola soy ${this.nombre}  ${this.apellido} tengo ${this.edad} años y estudio ${this.carrera}`);
+        }
 }
 
 let persona1 = new Persona("Juan", 30);
