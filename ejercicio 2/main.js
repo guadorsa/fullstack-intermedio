@@ -38,7 +38,7 @@ class Estudiante extends Persona{
 let persona1 = new Persona("Juan", 30);
 persona1.Saludar();
 persona1.getEdad;
-persona1.setEdad;
+persona1.setEdad(30);
 persona1.getNombre;
 persona1.setNombre;
 console.log(persona1.nombre);
