@@ -4,7 +4,7 @@ class Persona{
         this.edad=edad;
     }
     Saludar(){
-        console.log("hola soy" + $(this.nombre) +'y tengo' + $(this.edad) + 'años');
+        console.log(`hola soy ${this.nombre} y tengo ${this.edad} años`);
         }
 }
 let persona1 = new Persona("Juan", 30);
