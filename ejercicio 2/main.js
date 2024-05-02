@@ -8,5 +8,6 @@ class Persona{
         }
 }
 let persona1 = new Persona("Juan", 30);
+persona1.saludar();
 console.log(persona1.nombre);
 console.log(persona1.edad);
