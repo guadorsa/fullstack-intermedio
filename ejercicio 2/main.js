@@ -5,5 +5,5 @@ class Persona(){
     }
 }
 let persona1 = new Persona("Juan", 30);
-console.log(Persona.nombre);
-console.log(Persona.edad);
+console.log(persona1.nombre);
+console.log(persona1.edad);
