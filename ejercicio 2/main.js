@@ -38,7 +38,7 @@ class Estudiante extends Persona{
         }
 }
 
-let persona1 = new Persona("Juan", 30);
+let persona1 = new Persona("Juan","ortiz", 30, "m", 45, 170);
 persona1.Saludar();
 persona1.getEdad;
 persona1.setEdad(30);
