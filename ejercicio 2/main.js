@@ -3,6 +3,9 @@ class Persona{
         this.nombre=nombre;
         this.edad=edad;
     }
+    saludar(){
+        console.log(hola soy $(this.nombre) y tengo $(this.edad) años)
+        }
 }
 let persona1 = new Persona("Juan", 30);
 console.log(persona1.nombre);
