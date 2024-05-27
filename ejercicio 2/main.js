@@ -6,6 +6,11 @@ class Persona{
         this.sexo=sexo;
         this.peso=peso;
         this.altura=altura;
+        let identificacion = 123456;
+    }
+
+    getIdentificacion(){
+        return this.identificacion;
     }
 
     getNombre(){
