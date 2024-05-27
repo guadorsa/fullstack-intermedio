@@ -1,12 +1,16 @@
 class Persona{
     constructor(nombre, apellido, edad, sexo, peso, altura){
-        this.nombre=nombre;
+        this.nombre= nombre;
         this.apellido=apellido;
         this.edad=edad;
         this.sexo=sexo;
         this.peso=peso;
         this.altura=altura;
-        let identificacion = 123456;
+        this.identificacion = 123456;
+    }
+
+    obtenerIdentificacion = function(x,y){
+        return = x*y;
     }
 
     getIdentificacion(){
@@ -56,4 +60,5 @@ const estudiante1=new Estudiante("juan","ortiz", 34, "sistemas");
 console.log(estudiante1.nombre);
 console.log(estudiante1.carrera);
 estudiante1.Saludar();
+console.log (persona1._identificacion)
 
