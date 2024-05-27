@@ -10,7 +10,7 @@ class Persona{
     }
 
     obtenerIdentificacion = function(x,y){
-        return=x+y;
+        return x+y;
     }
 
     getIdentificacion(){
