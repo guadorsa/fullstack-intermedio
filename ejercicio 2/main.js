@@ -60,5 +60,7 @@ const estudiante1=new Estudiante("juan","ortiz", 34, "sistemas");
 console.log(estudiante1.nombre);
 console.log(estudiante1.carrera);
 estudiante1.Saludar();
-console.log (persona1._identificacion)
+console.log (persona1._identificacion);
+console.log (persona1._obtenerIdentificacion(5,5));
+
 
