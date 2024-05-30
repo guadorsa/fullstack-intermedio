@@ -9,12 +9,16 @@ class Persona{
         this.identificacion = 123456;
     }
 
-    obtenerIdentificacion = function(x,y){
-        return x+y;
+    obtenerIMC = function(x,y){
+        return x/(y*y);
     }
 
     getIdentificacion(){
         return this.identificacion;
+    }
+
+    desplegarIMC(){
+        console.log(this.obtenerIMC(this.peso, this.altura));
     }
 
     getNombre(){
@@ -49,7 +53,9 @@ class Estudiante extends Persona{
 
 let persona1 = new Persona("Juan","ortiz", 30, "m", 45, 170);
 persona1.Saludar();
-persona1.getEdad;
+persona1.desplegarIMC();
+//persona1.getEdad;
+/*
 persona1.setEdad(30);
 persona1.getNombre;
 persona1.setNombre;
@@ -62,5 +68,6 @@ console.log(estudiante1.carrera);
 estudiante1.Saludar();
 console.log (persona1.identificacion);
 console.log (persona1.obtenerIdentificacion(5,5));
+*/
 
 
