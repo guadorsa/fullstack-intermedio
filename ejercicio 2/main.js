@@ -6,9 +6,10 @@ class Persona{
         this.sexo=sexo;
         this.peso=peso;
         this.altura=altura;
-        this.identificacion = 123456;
+        this.identificacion = 123456; /*  variable privada*/
     }
 
+    /* funcion privada Interna  */
     obtenerIMC = function(x,y){
         return x/(y*y);
     }
@@ -17,8 +18,9 @@ class Persona{
         return this.identificacion;
     }
 
+    /* llamo a la funcion externa, paso parametros por valor, mas no por referencia */
     desplegarIMC(){
-        console.log(this.obtenerIMC(this.peso, this.altura));
+        console.log(this.obtenerIMC(this.peso, this.altura)); /* llamo a la funcion externa */
     }
 
     getNombre(){
@@ -53,7 +55,10 @@ class Estudiante extends Persona{
 
 let persona1 = new Persona("Juan","ortiz", 30, "m", 45, 170);
 persona1.Saludar();
-persona1.desplegarIMC();
+persona1.desplegarIMC(); /* funcion externa */
+let IMC = persona1.obtenerIMC(persona1.peso, persona1.altura); /* menos elaborada q anterior */
+console.log(IMC);
+
 //persona1.getEdad;
 /*
 persona1.setEdad(30);
